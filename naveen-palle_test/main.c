@@ -14,5 +14,8 @@ int main() {
      d=0;
     d=a/c;
      printf("\nsum of div is : %d",d);
+     d=0;
+     d=a*c;
+     printf("\nsum of MUL is : %d",d);
     
 }
