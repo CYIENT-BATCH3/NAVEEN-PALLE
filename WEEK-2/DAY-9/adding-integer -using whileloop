@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+//.........adding intigers given by user using while loop...............
+int n=4386,rem,sum;
+while(n>0){
+    rem = n%10;//...logic for finding remainder
+    sum =sum+rem ;//adding remainder to sum
+    n=n/10;//dividing the actual number with 10 to decrease the size of that integer
+    printf("\n%d",sum);
+    
+}
+  
+} 
