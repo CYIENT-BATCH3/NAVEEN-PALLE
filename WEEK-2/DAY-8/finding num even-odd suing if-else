@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+ main(){
+  int a;
+  int c;
+  //finding entered number even or odd
+  printf("enter number : ");
+  scanf("%d",&a);//input
+  if(a%2==0)//condition , checking even or odd
+      printf("even");
+  
+  else 
+  printf("odd");
+}
