@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n,i=0,sum;
+  scanf("%d",&n);//input
+   while(i<=n){//while loop till the enter num value hit
+       sum=i%2;//logic
+       if(sum==0)//checking condition for even
+       {
+       printf("\nEVEN %d",i);//print only even
+       }
+       i++;//incriment for loop iteration
+   }
+} 
+
+  
