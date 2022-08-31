@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(){
+
+char sensor_var[15];//variables for storing data
+int ts,i;//variable for time stamp
+for(int k=0;k<10;k++)
+{
+scanf("%x",&sensor_var[k]);//taking 10 samples at a time
+}
+for(int k=0;k<10;k++)
+{//comparing 10 samples using for loop
+  if(sensor_var[k]>0x05 && sensor_var[k]<0xF1){//checking the samples using given conditions , any of those noise if yes print noise data or data with time stamp.
+    printf(" data  is :%x \n the time stamp is : %d \n",sensor_var[k],k);
+}
+else {
+    printf(" int noise data  is :%x \n the time stamp is : %d \n",sensor_var[k],k);
+}
+}
+return 0;
+}
