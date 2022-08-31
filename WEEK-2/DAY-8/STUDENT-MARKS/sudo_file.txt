@@ -1,0 +1,7 @@
+- first compiler go through the preprocessors in this code there is only stdio .h 
+- after that it will go to main function.
+- then there are some variables defined as shown in file.
+- after that it will take values by user.
+- then first it will assign to the variables.
+- then first add then and that value is assign to another variable then it will print that variable value.
+- similarly it will do both div and sub also and multiplication.
