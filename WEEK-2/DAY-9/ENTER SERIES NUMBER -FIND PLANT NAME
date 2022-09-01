@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+  char A[40];//IT HAS TAKEN TO STORE INPUT
+  
+printf("enter the serial number");//MESSAGE
+scanf("%s",&A);//INPUT
+  if(A[10]=='E'){//CHECK WETHER THE INDEX OF 10 IS E OR NOT
+      printf("\nplant is in electronic city");
+  }
+  else if(A[10]=='H'){//CHECK WETHER THE INDEX OF 10 IS H OR NOT
+       printf("\nplant is in HYDERABAD");
+  }
+  else if(A[10]=='P'){//CHECK WETHER THE INDEX OF 10 IS P OR NOT
+       printf("\nplant is in pune");
+  }
+   else    //CHECK WETHER THE INDEX IS NOT THERE IN ABOUT THEN PRINT INT NOT IN GIVEN PLANTS 
+   printf("its not in given plants");
+  }
