@@ -1,0 +1,16 @@
+#include<stdio.h>
+ 
+int main()
+{
+    //printing fibonacci numbers for given number
+    int a,b,c=1;
+    int num=0;//variable
+    printf("enter the number : ");
+    scanf("%d",&a);//input
+    while(num<=a){//logic for fibonacci
+        printf("%d  ",num);
+       b=c+num;
+       num =c;
+       c=b;
+    }
+}
