@@ -21,7 +21,7 @@ int main(){
        }
        
    }
-  
+    printf("invalid firm");//for invalid firm given
    
 
 }
