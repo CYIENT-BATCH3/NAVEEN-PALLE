@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+   int vin_number=0;
+   char firm[10];
+   printf("enter vin_number is : ");
+   scanf("%d",&vin_number);//INPUT FOR MODEL NUMBERS START
+   printf("enter the brach of manufacture : ");
+   scanf("%s",&firm);//INPUT FOR FIRM NAME
+   
+   for(int i=0;i<=20;i++){//WILL PRINT MODEL NUMBER STARTS FROM USER GIVEN
+       printf("\n1%sBH41JXMN%d",firm,vin_number+i);
+   }
+   
+
+}
