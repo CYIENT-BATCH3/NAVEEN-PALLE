@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a[40][40];//max size of array
+    int r ,c,sum ;//store column and row value from user
+    printf("enter the row : ");//input for row
+    scanf("%d",&r);//assign
+     printf("enter the column : ");//input for column
+    scanf("%d",&c);//assign
+    //int d =c/2;
+    for(int i=0;i<r;i++){//iteration for row
+        for(int j=0;j<c;j++){//iteration for column
+            scanf("%d",&a[i][j]);//reading from user as one by one and store
+        }
+    }
+    for(int i=0;i<r;i++){//iteration for print of row
+        printf("\n");//new line for after complition of column
+        for(int j=0;j<c;j++){//iteration for print column
+            printf("%d\t",a[i][j]);//printing
+            sum =sum +a[i][j];//addig value one after other,summing all
+        }
+    }
+    printf("%d",sum);//printing the sum of all
+}
