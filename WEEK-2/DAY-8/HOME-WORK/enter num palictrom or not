@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char a[40];//USED TO TAKE INPUT AND STORE
+    char b[40];//USED TO STORE OF REVERSE INPUT AND COMPARE
+    char status1='f';//for used as a bool 
+    printf("enter ");
+    scanf("%s",&a);//input
+   
+   int len =strlen(a);//messuring the lengh of input
+   printf("%d\n",len);
+   int j=len-1,i=0,k=0;
+   int n=0;
+  while(n<len){//used while loop to store one array to another as a reverse input
+     b[k++]=a[j--];
+      n++;
+  }
+ while(i<=len){
+      if(a[i] != b[i]){//check whether the input palictrom or not 
+       // printf("false , its not\n");
+       if(i==len){//if yes till the last iteration of this loop then allows status1 value is 'p'
+       status1='p';
+       }
+        break;
+      }
+      else{
+         
+      }
+      i++;
+      
+  }
+  if(status1=='p'){//check status1 value is 'p' then 
+  printf("%c",status1);
+  printf("\nits true,  %s is palictrom .\n",a);//print its palictrom
+  }
+  else
+  {
+       printf("false , its not\n");//else print its not .
+  }
+    
+}
