@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[40][40][40];//max size of array
+    int r ,c,g,sum=0 ;//store column and row value from user
+    printf("enter the row : ");//input for row
+    scanf("%d",&r);//assign
+     printf("enter the column : ");//input for column
+    scanf("%d",&c);//assign
+    printf("enter the VALUE FOR 3RD IS  : ");//input for 3rd value
+    scanf("%d",&g);//assign
+    //int d =c/2;
+    printf("enter the matrix values \n");
+    for(int i=0;i<r;i++){//iteration for row
+        for(int j=0;j<c;j++){//iteration for column
+        for(int k=0;k<g;k++){//iteration for 2column
+            scanf("%d",&a[i][j][k]);//reading from user as one by one and store
+        }
+        }
+    }
+    for(int i=0;i<r;i++){//iteration for print of row
+        printf("\n");//new line for after complition of column
+        
+        for(int j=0;j<c;j++){//iteration for print column
+        
+         for(int k=0;k<g;k++){//iteration for print 2column
+            printf("%d\t",a[i][j][k]);//printing
+            sum =sum+a[i][j][k];//adding all
+    
+         }
+        }
+    }
+    printf("sum of all value is : %d",sum);
+    
+}
