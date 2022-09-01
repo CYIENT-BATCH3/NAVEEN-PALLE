@@ -21,7 +21,10 @@ int main(){
        }
        
    }
-    printf("invalid firm");//for invalid firm given
+   if(firm =='P' ||firm =='H'||firm=='E'){
+  }
+  else
+       printf("invalid firm");
    
 
 }
