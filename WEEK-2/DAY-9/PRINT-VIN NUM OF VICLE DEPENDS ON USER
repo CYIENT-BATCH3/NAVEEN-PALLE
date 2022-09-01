@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+   int vin_number=0;
+   char firm;
+   printf("enter the number from (1,2,3 ): ");//ENTER NUM
+   scanf("%d",&vin_number);//INPUT
+   printf("\nenter the plant E OR H, P : ");//ENTER CHAR
+   scanf(" %c",&firm);//ASSIGN
+   int value=109186;//NUMBER OF SERIES CARS
+   for(int i=0;i<=20;i++){//USED TO PRINT 20 SERIES MODEL NUMBERS
+       if(firm == 'P'){//IF CHAR 'P' THEN PRINT MODEL NUMB'S WITH "PU" PLANT NAME WITH IT
+       printf("\n%dCYLE10PZYPU%d",vin_number,value+i);
+       
+       }
+       else if(firm =='E'){//IF CHAR 'E' THEN PRINT MODEL NUMB'S WITH "EC" PLANT NAME WITH IT
+           printf("\n%dCYLE10PZYEC%d",vin_number,value+i);
+       
+       }
+        else if(firm =='H'){//IF CHAR 'H' THEN PRINT MODEL NUMB'S WITH "HY" PLANT NAME WITH IT
+            printf("\n%dCYLE10PZYHY%d",vin_number,value+i);
+       }
+       
+   }
+  
+   
+
+}
