@@ -22,5 +22,5 @@ int main()
             sum =sum +a[i][j];//addig value one after other,summing all
         }
     }
-    printf("%d",sum);//printing the sum of all
+    printf("\n sum of all numbers is : %d",sum);//printing the sum of all
 }
