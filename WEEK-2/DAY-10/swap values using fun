@@ -1,3 +1,13 @@
+/*  ......algorithm................
+
+* used one function which is permform all the swapping method
+*used swap two variable value
+* for that i have used another temp veriable to get the o/p
+* to print the output use that function in main 
+..........................................................*/
+
+
+
 #include<stdio.h>
 //int x,y;//variable
 int c=0;//blank variable
