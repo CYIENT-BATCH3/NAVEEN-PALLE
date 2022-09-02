@@ -1,0 +1,21 @@
+/*.......algorithm for function with return & no arguments........
+created one function
+taken the value it self
+summing those
+return those to a fuction where it is called by
+in main fuctionit is called so taken one temp varibaleto store the value of returned
+and print it.
+..........................................*/
+
+//...program............//
+#include<stdio.h>
+int sum(){//sum function which is declared by user
+    int v_a=5;int v_b=10;//local varibale
+    int v_c =v_a+v_b;
+    return v_c;
+}
+int main(){//main function
+    int v_f =sum();//taken to store the value of that fuction returns
+    printf("value of sum function is : %d",v_f);//printing
+    return 0;//its return
+}
