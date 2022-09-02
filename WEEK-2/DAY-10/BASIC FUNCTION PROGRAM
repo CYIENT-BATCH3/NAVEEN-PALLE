@@ -1,0 +1,30 @@
+#include<stdio.h>
+//int x,y;//variable
+
+
+void sum(int x, int y){//function for sum add
+printf("sum is %d",x+y);// x+y;
+    
+}
+void sub(int x, int y){//function for sub
+printf("\nsub is %d",x-y);
+    
+}
+void mul(int x, int y){//function for mul
+printf("\nmul is %d",x*y);
+    
+}
+void dib(int x, int y){//function for dib
+printf("\ndiv is %d",x/y);
+    
+}
+int main(){//main function where the code start exicute
+    int a,b;
+   // int b=2;
+   printf("enter the two numbers : ");
+   scanf("%d%d",&a,&b);//taking input from user side
+    sum(a,b);//sum functuion
+    sub(a,b);//sub functuion
+    mul(a,b);//mul functuion
+    dib(a,b);//div functuion
+}
