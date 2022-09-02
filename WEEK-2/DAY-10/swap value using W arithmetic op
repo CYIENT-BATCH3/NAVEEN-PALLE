@@ -1,6 +1,14 @@
+/*  ......algorithm................
+
+* used one function which is permform all the swapping method
+*used swap two variable value
+* for that i have used another temp veriable to get the o/p
+* to print the output use that function in main 
+..........................................................*/
+
+
+
 #include<stdio.h>
-
-
 void swap(int a, int b){//swapping fun
     a =a +b;//assinong value to a by adding a and b
     b=a-b;//assinong value to b by sub a and b
