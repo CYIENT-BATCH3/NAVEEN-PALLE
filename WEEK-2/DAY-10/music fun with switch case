@@ -1,0 +1,47 @@
+/*.......algorithm for function with return & no arguments........
+created one function named by music
+take a one argument with help of argument value which is given by user
+compare the value with 1 and 2 and 3 like 4, 5
+depend on the value print message like play stop and paused
+use this music functionin main function and give a argument value to it
+..........................................*/
+
+//...program............//
+#include<stdio.h>
+void  music(int x){//music is function
+switch(x)
+{
+    case 1 : printf("music is playing now..");
+    break;
+    case 2 :printf("the music is stopped..!!");
+    break;
+    case 3 :printf("the music is paused..");
+    break;
+    case 4:printf("'collide' song is playing");
+    break;
+    case 5 :printf("list of songs is: \n dive ,\n collide, \nsong ,\n beautifull, \nour song  \n");
+    break;
+    default :printf("the entered number is invalid .. :) , \n try again  ;)");
+    // if(x==1)//if x == 1 the print playing
+    //     printf("music is playing now..");
+    // else if(x==2)//if given value is 2 then print stop
+    // printf("the music is stopped..!!");
+    // else if(x==3)//if given value is 3 then print paused 
+    // printf("the music is paused..");
+    // else if(x==4)//if given value is 4 print currentsong
+    // printf("'collide' song is playing");
+    // else if(x==5)//if given value is 5 then print list
+    // printf("list of songs is: \n dive ,\n collide, \nsong ,\n beautifull, \nour song  \n");
+    // else
+    // printf("the entered number is invalid .. :) , \n try again  ;)");
+  
+    
+}
+}
+void main(){
+ int a;//taken local variable and assign value which has given by user
+ printf("1 for play, 2 for stop , 3 for pause, 4 for current song, 5 for list, enter the num : ");
+ scanf("%d",&a);//assign
+ music(a);//calling function with variale has given by user
+    
+}
