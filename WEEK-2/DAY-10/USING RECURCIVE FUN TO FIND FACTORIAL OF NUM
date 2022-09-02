@@ -1,0 +1,29 @@
+/******************************************************************************
+USER defne fuction which is facto
+and using recursive fuctioncall
+while it is recursive i have to use a conition as a x==0
+becouse it will recursive up to zero only 
+calling that function in main
+and saveing that value in one variable
+and printing it
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int facto(int x){//user function
+   int y;//local ver
+   
+   if(x==0)//condtion to stop recursive
+       return 1;//return right away
+       
+    y=x*facto(x-1);//logic to find a factorial of given integer
+    return y;//return the value to where is it called
+   
+}
+int main()
+{
+  
+  int s = facto(5);//taking value to called  function
+  printf("%d",s);//printing
+}
