@@ -1,0 +1,23 @@
+/* ......algorithm.............
+* used some float function to perform sum of float
+* so i have take intput from user for that i used arguments to the float function
+* i have adding the value which are given by user
+*and iam return to the function which it is where called
+*printing it 
+................................................*/
+
+
+
+
+#include<stdio.h>
+float sum(float x, float y){//float function
+    float sum_v = x+y;//adding float value which are given by user
+    return sum_v;//return value of summing
+}
+void main(){//main function
+    float a,b;//local variable
+    printf("enter : ");//message for user
+    scanf("%f%f",&a,&b);//input
+    float c=sum(a,b);//assign value of sum function to a veriable
+    printf("value is %f",c);//printing
+}
