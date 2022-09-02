@@ -1,0 +1,18 @@
+#include<stdio.h>
+//int x,y;//variable
+int c=0;//blank variable
+void swap(int a, int b){//swapping fun
+    c=b;//assign b value to c
+    b=a;//assign a value to b
+    a=c;//assign c value to a
+    printf(" \na value is %d",a);
+    printf("\nb value is %d",b);
+    
+    
+}
+void main(){
+    int a, b;
+    printf("enter two num :");
+    scanf("%d%d",&a,&b);//input from user
+    swap(a,b);//swap fun used 
+}
