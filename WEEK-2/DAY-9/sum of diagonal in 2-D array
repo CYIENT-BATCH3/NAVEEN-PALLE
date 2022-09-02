@@ -9,6 +9,7 @@ int main()
      printf("enter the column : ");//input for column
     scanf("%d",&c);//assign
     //int d =c/2;
+    printf("enter the elements : ");
     for(int i=0;i<r;i++){//iteration for row
         for(int j=0;j<c;j++){//iteration for column
             scanf("%d",&a[i][j]);//reading from user as one by one and store
