@@ -1,3 +1,11 @@
+//...............ALGORITHMN................////
+/* used some functions to perform some task
+ * with the variable passing
+ * the variables of function are should int same type
+ * calling that functuons in main function with the variables are given by user define
+ ........................................................*/
+
+//............program......................//
 #include<stdio.h>
 //int x,y;//variable
 
