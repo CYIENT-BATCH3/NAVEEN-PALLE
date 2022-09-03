@@ -1,0 +1,27 @@
+/******************************************************************************
+USER defne fuction which is findpos
+and using this fuctioncall
+have to find togglel pos value
+before that have to find exact pos value of given byte_value
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include<math.h>
+
+int findpos(int byte_value,int pos){//user function
+    int p = pow(2,pos);//to find pos have used 2 power given value
+    int value = byte_value & p;//CHICKING POS OF BIT
+    printf("p value %d\n",p);
+    printf("actual pos value %d",value);//PRINTING actual POS VALUE
+    int xorv = ~value;
+     printf("\ntoggle pos value %d",-xorv);//TOGGLE VALUE OF POS VALUE
+}
+int main(){//MAIN FUNCTION
+    int byte , pos;//LOCAL VERIABLES
+    printf("enter the byte value : ");//MESSAGE
+    scanf("%x",&byte);//TAKING BYTE FROM USER
+    printf("enter the pos value : "); 
+    scanf("%d",&pos);//TAKING POS VALUE WHICH HAE TO FIND
+    findpos(byte,pos);// fuctioncall
+}
