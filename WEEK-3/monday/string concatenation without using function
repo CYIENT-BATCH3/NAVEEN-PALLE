@@ -1,0 +1,23 @@
+/*
+concatenate two string with out using strcat function
+*/
+
+
+#include<stdio.h>
+#include<string.h>
+
+int main(){//main function
+    char str1[20],str2[20];//variable
+    printf("enter the first name : ");//message
+    scanf("%s",str1);//input
+    printf("enter second name : ");//message
+     scanf("%s",str2);//input2
+     int len1 = strlen(str1);//find lengh 
+     int len2 = strlen(str2);//find lengh 
+     for(int i=0;i<=len2;i++){//loop to store every char in one array to another array
+         str1[len1+i]=str2[i];//storing one to another
+         
+     }
+     printf(" concatenation sring is : %s",str1);//printing 
+    
+}
