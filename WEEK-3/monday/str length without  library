@@ -1,0 +1,23 @@
+/******************************************************************************
+
+finding he string length w/o using strlen
+
+
+*******************************************************************************/
+#include <stdio.h>
+//#include<string.h>
+
+int main()//main
+{
+   
+  char str[20];//array
+  int count=0;
+  printf("enter :");//message
+  scanf("%[^\n]s",str);//input
+ //gets(str);
+  for(int i=0;i<=str[i] !='\0';i++){
+      count++;//counting
+  }
+  printf("length of str is :%d",count);//priting
+ 
+}
