@@ -1,0 +1,21 @@
+/******************************************************************************
+
+concatenate the string using dedicated function from library
+
+
+*******************************************************************************/
+#include <stdio.h>
+#include<string.h>
+
+int main()//main
+{
+   
+  char str1[30],str2[30];//arrays to store user input
+  printf("enter first string :");//message
+  scanf("%s",str1);//storing
+  printf("enter second string :");
+  scanf("%s",str2);//storing
+   //strcat(str1,str2);
+  printf("%s",strcat(str1,str2));//output
+}
+  
