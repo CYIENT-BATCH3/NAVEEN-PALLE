@@ -20,3 +20,34 @@ void swap(int *a,int *b){//SWAP FUNCTION
  swap(P,Q);
  return 0;
  }
+
+
+
+//......................................................................
+//another aproch
+/*..................
+
+/*SWAPPING TWO VALUES USING FUNCTION AND POINTERS */
+
+#include <stdio.h>
+
+void swap(int *a,int *b){//SWAP FUNCTION
+    int c;//TEMPARARY VERIABLE
+    c=*a;//ASSIGN A VALUE TO C
+    *a=*b;//B value TO A
+    *b=c;//C VALUE TO B
+   
+    
+}
+ int main(){//MAIN FUNCTION
+ int a,b,*P,*Q;//VARIABLES
+ printf("enter the numbers:\n ");//MESSAGE
+ scanf("%d%d",&a,&b);//INPUT
+ P=&a;//ASSIGN VALUES TO POINTER
+ Q=&b;//ASSIGN VALUES TO POINTER
+ //CALL FUNCTION
+ swap(P,Q);
+ printf("a value is %d\n b value is %d",a,b);
+ return 0;
+ }
+ ..........................................................*/
