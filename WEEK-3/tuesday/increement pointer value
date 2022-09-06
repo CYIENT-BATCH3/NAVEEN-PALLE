@@ -1,0 +1,22 @@
+
+/*adding some value to adress and see how it is working */
+
+#include <stdio.h>
+
+
+ int main(){//MAIN FUNCTION
+   int a=3,b=4;//varibales
+   
+   int *p1,*p2;//pointers
+   p1=&a;//assign
+   p2=&b;//assign
+   printf("real value :%d  \n",*p1);//actual value
+   printf("after adding value:%d",++*p1);//increement value
+   
+ }
+ /* two pointer canot be added,canot be multiple,divide
+ can substraction,can be added to some value to adress,or value  
+ %d is print the value of the pointer and also adress but in neither -or+ 
+ %u is print only the + adress value
+ 
+ */
