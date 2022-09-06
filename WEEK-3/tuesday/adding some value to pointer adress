@@ -1,0 +1,13 @@
+/*adding some value to adress and see how it is working */
+
+#include <stdio.h>
+
+
+ int main(){//MAIN FUNCTION
+   int a=3,b=4;//varibales
+   
+   int *p1,*p2;//pointers
+   p1=&a;//assign
+   p2=&b;//assign
+   printf("real value :%d  \n after adding value:%d",p1,p1+2);
+ }
