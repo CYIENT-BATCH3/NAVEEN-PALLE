@@ -1,0 +1,20 @@
+/*print values of mod and coefficient of given two varibales */
+
+#include <stdio.h>
+void mulfunc(int a,int b,int* p,int* q){//multiple argument function
+    *p=a/b;//get value assign to adress of intiger a
+    *q=a%b;//get value assign to adress of intiger b
+   
+}
+void main(){//main 
+   int a,b;//varibales
+   int *p,*q;//pointer
+   printf("enter two numbers :");//message
+   scanf("%d %d",&a,&b);//input
+  p=&a;//assign adress of a to p pointer
+  q=&b;//assign adress of b to q pointer
+   mulfunc(a,b,p,q);//function calling
+    
+   printf(" a value is :%d\n",a);//printing the a value after function call
+    printf("b value is: %d\n",b);//printing the b value after function call
+}
