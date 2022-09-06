@@ -22,3 +22,39 @@ int main() {//main function
    scanf("%[^\n]s",p);//input
  strcap(p);//function call
 }
+//............................................................................................................................
+//......................................................................................................
+/* another approch to get the output
+get string from another function to main function
+printing from main function 
+....................................................................................................
+
+*/
+/*
+/*
+print small letters to cap letters using function
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+   
+   
+   const char* strcap(char s[]){//function for logic
+   for (int i = 0; s[i]!='\0'; i++) {//loop to convert every char
+     if(s[i] >= 'a' && s[i] <= 'z') {//only conv small to cap ,
+         s[i] = s[i]-' ';//convertion
+      }
+   }
+return s;
+  
+}
+int main() {//main function
+   char p[100];
+   printf("\nEnter a string : ");//message
+   scanf("%[^\n]s",p);//input
+char* d= strcap(p);//function call
+printf(" the cap is %s",d);
+}
+
+*/
