@@ -1,0 +1,20 @@
+/*print values of diff data types using function and pointers */
+
+#include <stdio.h>
+void mulfunc(int *a,float *c,char *d){//multiple argument function
+    printf("int value is: %d\n",*a);//printing int
+    printf(" float value is: %f\n",*c);//printing float
+    printf("char value is: %c\n",*d);//printing char
+    
+}
+void main(){//main 
+    int *x=0,f;//declaring pointer and integer
+    float *y=0,g;//declaring float and pointer
+    char *z=0,h;//declaring char and pointer
+    printf("enter int , float , char:");//message for user
+    scanf("%d %f %c",&f,&g,&h);//storing values in diff varibales
+    x=&f;//assign adress to pointer
+    y=&g;//assign adress to pointer
+    z=&h;//assign adress to pointer
+    mulfunc(x,y,z);//function calling
+}
