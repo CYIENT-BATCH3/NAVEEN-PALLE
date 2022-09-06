@@ -18,4 +18,5 @@ void swap(int *a,int *b){//SWAP FUNCTION
  Q=&b;//ASSIGN VALUES TO POINTER
  //CALL FUNCTION
  swap(P,Q);
+ return 0;
  }
