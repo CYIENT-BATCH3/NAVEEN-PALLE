@@ -1,0 +1,30 @@
+
+/* FIND average VALUE of the float array 
+so take function and take two arguments one is for array and one is for length
+and add sum of all element in array for that use for loop
+and divide that value by length of array
+and return that value to main...................*/
+
+
+#include <stdio.h>
+
+
+float avg(float *a,int n){//average function
+    float sum=0,average;//variables
+    for(int i=0;i<=n;i++){//for loop to sum all
+        sum =sum+a[i];
+    }
+    average=sum/n;//find avarage value 
+    return average;//return to main 
+}
+int main()
+{
+    //variable declaration
+  float a[4]={1,2,3,4};
+  float result;
+  //function calling
+  result=avg(a,4);
+  //printing the value
+printf(" value is %f ",result);
+    return 0;
+}
