@@ -1,0 +1,37 @@
+/******************************************************************************
+
+FIND THE NUMBER OF HOW MANY WORDS ARE THERE
+for that take a main fun and ake char array ,printf one message 
+to enter the sentance 
+fond the length of string using strlen
+and write a loop with condition and count the words will the help of space between them
+
+
+*******************************************************************************/
+#include <stdio.h>
+#include<string.h>
+
+int main()//main
+{
+   
+   char v_mes[80];//variable
+   int count =1;//variable
+   int space =0,i=0 ,Alpha=0,spl=0;//variable
+  printf("enter string :");//message
+  scanf("%[^\n]s",v_mes);//input
+  for(i=0;i<=strlen(v_mes);i++){//loop to read every char
+      if(v_mes[i] == ' ' ){//count saces in sentance
+          space++;//count
+      }
+      if(v_mes[i]>='a'&&v_mes[i]<='z'||v_mes[i]>='A'&&v_mes[i]<='Z' ){//logic for letters
+          Alpha++;//count
+      }
+      else if(v_mes[i]>=33&&v_mes[i]<=47||v_mes[i]>=58&&v_mes[i]<=64||v_mes[i]>=91&&v_mes[i]<=96)//logic for spl char
+      spl++;//count
+     
+  }
+  printf("spaces are is : %d\n",space);//print num of space's 
+   printf(" letters are is : %d\n",Alpha);//print num of letters
+    printf(" special char are is : %d",spl);//print num of char spl
+   
+}
