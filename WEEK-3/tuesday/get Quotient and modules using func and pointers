@@ -1,4 +1,4 @@
-/*print values of mod and coefficient of given two varibales */
+/*print values of modules and quotient of given two varibales */
 
 #include <stdio.h>
 void mulfunc(int a,int b,int* p,int* q){//multiple argument function
