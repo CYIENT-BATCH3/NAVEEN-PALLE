@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+
+int English(){
+    int x=0;
+    
+printf("to set caller Tune press 1,\nto know status of recharge press 2,\nto talk to customer care press 3\n go back to previous menu press 9\n");
+scanf("%d",&x);
+if(x==1)
+ printf("setting caller tune ");
+else if(x==2)
+ printf("the recharge is expired");
+else if(x==3)
+ printf("wait till connect call to customer executive");
+else if(x==9)
+ INRCALL();
+else
+printf("choose correct option");
+    
+    
+}
+
+int telugu(){
+    int x=0;
+    printf("\ncaller tune set chesukovali ante 1 press cheyyandi\n mi recharge status telusukovali ante 2 press cheyyandi \n customer athinidhitho matladali ante 3 press cheyyandi \n back vellali ante 9 press cheyyandi..");
+    scanf("%d",&x);
+   if(x==1)
+       printf("\nsetting caller Tune..");
+   else if(x==2)
+       printf("\nmi recharge ayipoyindhi.");
+   else if(x==3)
+       printf("\nma sevakulu andhubatuloki vache varaku vechi vundabalasindhi ga korchunnamu...");
+    else if(x==9)
+      INRCALL();
+    else
+    printf("\ndhayachesi sari ayina number nu enchukondi.");
+}
+int INRCALL(){
+    int num=0;
+    printf("Well come to airtel customer service...");
+     printf("\n telugu koraku 1 nokkandi, \n for English press 2,\n hindhi ke liye 3 dhabhadhiye..\n");
+     scanf("%d",&num);
+     if(num==1){
+         telugu();
+     }
+     else if(num==2){
+     English();
+     }
+     else{
+     printf("choose correct option");}
+}
+int main(){
+    
+    INRCALL();
+}
