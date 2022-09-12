@@ -1,0 +1,33 @@
+/*
+ * naveen palle
+ * using eclipse ide
+ *
+ * program : (algorithm)
+ * to get a output using pointers from function
+ * create a function pass arguments as a pointer
+ * write tast to do sum
+ * create main function , take a values from user
+ * and call function along with arguments
+ */
+
+#include<stdio.h>//include the header file for input output
+
+int sum(int *x,int *y){
+	int sum;
+	sum =*x+*y;
+	return sum;
+}
+void main(){
+	int a,b;
+	printf("enter the values  :");
+	scanf("%d%d",&a,&b);
+	printf("sum value is: %d",sum(&a,&b));
+
+}
+
+/* 
+ * OUTPUT :
+ * enter the values   :3
+ * 4
+ * sum value is:7
+ */
