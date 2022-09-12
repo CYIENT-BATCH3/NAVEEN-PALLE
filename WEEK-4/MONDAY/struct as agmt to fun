@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+struct student//structure declaration
+{
+int age;//structure member
+int name[20];//structure =member
+};
+
+void details(struct student record){//structure as argument to a function 
+printf("age is %d\n",record.age);//printing
+printf("name  is %s\n",record.name);//printing
+}
+int main(){//main
+	setbuf(stdout,NULL);//setting buf for eclipse
+struct student record;//structure variable
+record.age=14;//assign value to structure variable
+strcpy(record.name,"naveen");//copy function for assign string to mem 
+details(record);//calling fun
+}
