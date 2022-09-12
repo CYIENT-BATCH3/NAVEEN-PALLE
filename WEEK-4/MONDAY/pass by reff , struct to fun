@@ -13,7 +13,8 @@ struct student
 //function defination
 void func(struct student *rec){
 	printf("id is %d \n name is %s \n per is %f",rec->id,rec->name,rec->per);//tast
-}//main defination
+}
+//main defination
 int main(){
 	struct student rec;//struct variable
 	rec.id=1;//given id value
