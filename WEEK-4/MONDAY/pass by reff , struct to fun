@@ -1,4 +1,5 @@
-#include<stdio.h>
+
+#include<stdio.h>//include the header file for input output
 
 //structure deffination
 struct student
@@ -11,13 +12,13 @@ struct student
 };
 //function defination
 void func(struct student *rec){
-	printf("id is %d \n name is %s \n per is %f",rec->id,rec->name,rec->per);//tast 
+	printf("id is %d \n name is %s \n per is %f",rec->id,rec->name,rec->per);//tast
 }//main defination
 int main(){
-	struct student rec;//struct variable 
-	rec.id=1;
-	strcpy(rec.name,"naveen");
-	rec.per =100;
+	struct student rec;//struct variable
+	rec.id=1;//given id value
+	strcpy(rec.name,"naveen");//given name to that struct member
+	rec.per =100;//given percent value to mem of struct
 	func(&rec);//calling function
-	return 0;
+	return 0;//return zero
 }
