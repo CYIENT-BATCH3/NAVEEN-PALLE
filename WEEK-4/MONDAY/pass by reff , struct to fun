@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+
+struct student
+{
+	int id;
+	char name[20];
+	float per;
+
+};
+void func(struct student *rec){
+	printf("id is %d \n name is %s \n per is %f",rec->id,rec->name,rec->per);
+}
+int main(){
+	struct student rec;
+	rec.id=1;
+	strcpy(rec.name,"naveen");
+	rec.per =100;
+	func(&rec);
+	return 0;
+}
