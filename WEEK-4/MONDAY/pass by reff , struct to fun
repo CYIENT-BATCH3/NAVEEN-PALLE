@@ -1,21 +1,23 @@
 #include<stdio.h>
 
-
+//structure deffination
 struct student
 {
+//struct memners
 	int id;
 	char name[20];
 	float per;
 
 };
+//function defination
 void func(struct student *rec){
-	printf("id is %d \n name is %s \n per is %f",rec->id,rec->name,rec->per);
-}
+	printf("id is %d \n name is %s \n per is %f",rec->id,rec->name,rec->per);//tast 
+}//main defination
 int main(){
-	struct student rec;
+	struct student rec;//struct variable 
 	rec.id=1;
 	strcpy(rec.name,"naveen");
 	rec.per =100;
-	func(&rec);
+	func(&rec);//calling function
 	return 0;
 }
