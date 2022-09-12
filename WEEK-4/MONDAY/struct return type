@@ -1,0 +1,45 @@
+/*
+ * naveen palle
+ * using eclipse ide
+ *
+ * program : (algorithm)
+ * to print the values using struct as return type
+ create struct , and give members to it
+ create function called func with sruct output extention and with arguments
+ and assign some value to a member of a struct
+ and call that function in main,with assign to some varibale of struct
+ and with the help of that print the value with ".",
+ 
+ */
+
+#include<stdio.h>//include the header file for input output
+
+struct output{
+    int a;
+    float b;
+    char name[20];
+}s;
+struct output func(struct output e){
+    e.a=20;
+    e.b=50.8;
+    strcpy(e.name,"charan");
+    return (e);
+}
+int main(){
+    struct output ptr;
+  s.a=15;
+  s.b=44.4;
+  strcpy(s.name,"naveen");
+ ptr = func(s);
+ printf("%d\n",ptr.a);
+ printf("%f\n",ptr.b);
+ printf("%s\n",ptr.name);
+}
+
+/*
+output
+
+20
+50.799999
+charan
+*/
