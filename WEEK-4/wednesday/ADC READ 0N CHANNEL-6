@@ -69,14 +69,12 @@ void main(){
     
     unsigned int a;
     while(1){
-        ADCON0 =ADCON0 | 0x30;
+        ADCON0 =ADCON0 | 0x30;//change channel 0 to 6
       __delay_ms(2);
-      GO_nDONE =1;
+      GO_nDONE =1;//setting read adc
       while(GO_nDONE);
-      a=(ADRESH<<8)+ADRESL;
-      PORTC=a;
+      a=(ADRESH<<8)+ADRESL;//getting values to buffer memory
+      PORTC=a;//assign value to entaire port C
 
     }
-    
-    
-}
+    }
