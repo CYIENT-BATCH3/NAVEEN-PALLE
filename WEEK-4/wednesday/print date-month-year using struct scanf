@@ -1,0 +1,45 @@
+/*
+author : Naveen Palle(70301)
+topic : print date-month-year using scanf
+create struct and add members in it
+create struct varible in main
+using scanf take input from the user and assign to some tem var's
+often assign that variable values to struct members 
+then print the values of struct members(month/date/year)*/
+
+
+#include<stdio.h>
+
+
+
+struct date1
+{
+    unsigned int month:4;
+    unsigned int date2:5;
+    int year;
+};
+
+
+
+int main()
+{
+    struct date1 dt;
+    int x,y,z;
+    printf("Follow this step month/date/year\n");
+    scanf("\n%d %d %d",&x,&y,&z);
+    dt.month = x;
+    dt.date2 =y;
+    dt.year =z;
+    printf("date is %u/%u/%d",dt.month,dt.date2,dt.year);
+
+
+
+}
+/*
+output:
+FOLLOW THE STEP MONTH/DATE/YEAR
+12
+31
+2024
+date is 12/31/2024
+*/
