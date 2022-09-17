@@ -1,0 +1,41 @@
+/* 
+naveen palle
+algorithum :
+create a fun with name pos_fun with two arguments in that first is the num which we want to shift and second pos that we vant to set
+in the function take variable and asign like num with or and 1 left shift with pos
+and return to main */
+
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+
+int pos_fun(int num,int pos)
+ {//function for converter
+
+	int value;//local var
+	value = num |(1<<pos);//seting pos that user want
+     return value;//return to main
+
+
+
+
+}
+int main()//main fuction
+{
+	int num_=0;//var for num
+	int pos_=0;//var for pos
+printf("enter the num and pos : ");//message
+	scanf("%d %d",&num_,&pos_);//input
+int set;//local var to store ouput from func
+set =pos_fun(num_,pos_);//calling and storeing
+	printf("the pos bit is  :%d",set);//printing
+	
+	
+
+}
+/*
+	output :
+	enter the num and pos : 5
+	1
+	he pos bit is :7
+	*/
