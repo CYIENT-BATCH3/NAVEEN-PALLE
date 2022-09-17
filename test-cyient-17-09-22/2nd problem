@@ -31,26 +31,41 @@ int posclr_fun(int num,int pos)
 
 
 }
+int toggle(int num,int pos)
+ {//function for converter
+
+	int value;//local var
+	num= num ^(1<<pos);//seting pos toggle that user want
+     return num;//return to main
+
+
+
+
+}
 int main()//main fuction
 {
 	int num_=0;//var for num
 	int pos_=0;//var for pos
 printf("enter the num and pos : ");//message
 	scanf("%d %d",&num_,&pos_);//input
-int set,setclear;//local var to store ouput from func
+int set,setclear,settoggle;//local var to store ouput from func
 set =pos_fun(num_,pos_);//calling and storeing
 	printf("the pos bit set is  :%d\n",set);//printing
 	setclear =posclr_fun(num_,pos_);//calling and storeing
 	printf("the pos bit clear is  :%d\n",setclear);//printing
+	settoggle =toggle(num_,pos_);//calling and storeing
+	printf("the pos bit toggle is  :%d\n",settoggle);//printing
 	
 	
 
 }
 /*
 	output :
-	enter the num and pos : 5
-	1
-	the pos bit is :7
-	the pos bit is :0
+enter the num and pos : 5
+1
+the pos bit set is  :7
+the pos bit clear is  :0
+the pos bit toggle is  :7
+
 	
 	*/
