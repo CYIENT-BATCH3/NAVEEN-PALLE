@@ -13,7 +13,18 @@ int pos_fun(int num,int pos)
  {//function for converter
 
 	int value;//local var
-	value = num |(1<<pos);//seting pos that user want
+	value = num |(1<<pos);//seting pos set that user want
+     return value;//return to main
+
+
+
+
+}
+int posclr_fun(int num,int pos)
+ {//function for converter
+
+	int value;//local var
+	value = num &(1<<pos);//seting pos clearthat user want
      return value;//return to main
 
 
@@ -26,9 +37,11 @@ int main()//main fuction
 	int pos_=0;//var for pos
 printf("enter the num and pos : ");//message
 	scanf("%d %d",&num_,&pos_);//input
-int set;//local var to store ouput from func
+int set,setclear;//local var to store ouput from func
 set =pos_fun(num_,pos_);//calling and storeing
-	printf("the pos bit is  :%d",set);//printing
+	printf("the pos bit set is  :%d\n",set);//printing
+	setclear =posclr_fun(num_,pos_);//calling and storeing
+	printf("the pos bit clear is  :%d\n",setclear);//printing
 	
 	
 
@@ -37,5 +50,7 @@ set =pos_fun(num_,pos_);//calling and storeing
 	output :
 	enter the num and pos : 5
 	1
-	he pos bit is :7
+	the pos bit is :7
+	the pos bit is :0
+	
 	*/
