@@ -1,0 +1,43 @@
+/*
+ * author : Naveen Palle-70301
+ * algorithm:
+ * finding the binary value for a decimal value which we are taking from the user
+ * create function called convert_dc_bnr with one argument as intiger
+ * in that function take one variable as a local variable for storing the binary value
+ * do module that value take the % value as a binary and store it and return it to main
+ *
+ */
+
+
+
+
+#include<stdio.h>
+
+int conv_dc_b(int dec_var){//function for converter
+	int value ;//var for storing value
+	int value_=sizeof(dec_var);
+
+	for(int i=0 ;i<=value_;i++)  {  //loop for conevert dec to binary
+        value =dec_var%2;//taking module value as binary
+		 dec_var =dec_var/2;//deviding that num
+printf("%d ",value);//printing value
+
+
+
+	}
+
+}
+int main()//main fuction
+{
+	int num=0;//local var
+	printf("enter num :");
+	scanf("%d",&num);//taking value from the user
+	conv_dc_b(num);//function calling
+
+
+}
+
+/*output:
+ * enter num : 43
+ * 1 1 0 1 0
+ */
