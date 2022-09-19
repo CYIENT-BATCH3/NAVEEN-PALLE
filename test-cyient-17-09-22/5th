@@ -1,0 +1,71 @@
+#include<stdio.h> 
+
+#include<string.h> 
+
+typedef struct student 
+
+{ 
+
+    int age; 
+
+    int id; 
+
+    char name[30]; 
+
+}stu_t; 
+
+int main() 
+
+{ 
+
+    stu_t a[5]; 
+
+    a[0].id=1; 
+
+    a[0].age=21; 
+
+    strcpy(a[0].name,"Meena"); 
+
+    printf("\nid=%d,age=%d,name=%s",a[0].id,a[0].age,a[0].name); 
+
+     
+
+    a[1].id=2; 
+
+    a[1].age=22; 
+
+    strcpy(a[1].name,"priyanka"); 
+
+    printf("\nid=%d,age=%d,name=%s",a[1].id,a[1].age,a[1].name); 
+
+     
+
+    a[2].id=3; 
+
+    a[2].age=23; 
+
+    strcpy(a[2].name,"kavya"); 
+
+    printf("\nid=%d,age=%d,name=%s",a[2].id,a[2].age,a[2].name); 
+
+     
+
+    a[3].id=4; 
+
+    a[3].age=23; 
+
+    strcpy(a[3].name,"tejas"); 
+
+    printf("\nid=%d,age=%d,name=%s",a[3].id,a[3].age,a[3].name); 
+
+   
+
+    a[4].id=5; 
+
+    a[4].age=24; 
+
+    strcpy(a[4].name,"DRSP"); 
+
+    printf("\nid=%d,age=%d,name=%s",a[4].id,a[4].age,a[4].name); 
+
+} 
