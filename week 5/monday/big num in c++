@@ -1,0 +1,16 @@
+#include<iostream>//header file
+
+using namespace std;//declaring begining 
+
+int main(){//main func
+	int num1,num2;//local var
+	cout<<"enter numbers";//message
+	cin>>num1>>num2;//input
+	if(num1>num2){//checking
+		cout<<"first veriable is big :"<<num1;//printing
+
+	}
+	else{
+		cout<<"sec veriable is big :"<<num2;//printing
+	}
+}
