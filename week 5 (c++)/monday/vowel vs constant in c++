@@ -1,0 +1,36 @@
+
+/*
+naveen palle
+algorithm:
+create array for vowel charecters
+take input from user
+use for loop and conpare that char to array variables
+if true print vowel if not print constant
+*/
+
+#include<iostream>
+
+using namespace std;
+int main(){
+    char vowel[]={'a','e','i','o','u'};
+    char c;
+    cout<<"enter single char :";
+    cin>>c;
+    for(int i=0;i<=sizeof(vowel);i++){
+        if(c==vowel[i]){
+            cout<<"enter char is vowel"<<endl;
+            break;
+        }
+        else{
+            cout<<"entered char is constant"<<endl;
+            break;
+        }
+        
+    }
+   
+
+}
+/*output :
+enter single char :c
+entered char is constant
+*/
