@@ -1,0 +1,49 @@
+#include <stdio.h> 
+
+int main() 
+
+{ 
+
+    int arr[10]={8,5,7,6,12,45,10,4,9,11}; 
+
+    int *ptr=arr; 
+
+    int num,flag=0; 
+
+    printf("enter number to search"); 
+
+    scanf("%d",&num); 
+
+    for(int i=0;i<=10;i++) 
+
+    { 
+
+        if(ptr[i]==num) 
+
+        { 
+
+            flag=1; 
+
+            printf("number %d present at index:arr[%d]",num,i); 
+
+            break; 
+
+        } 
+
+         
+
+    } 
+
+    if(flag==0) 
+
+    { 
+
+        printf("number %d not in array",num); 
+
+    } 
+
+     
+
+    return 0; 
+
+} 
