@@ -1,0 +1,55 @@
+#include <stdio.h>     
+
+int main()  
+
+{ 
+
+    int a[]={20, 2, 10, 6, 52, 31, 0, 45, 79, 40}; //arrey declared
+
+    int temp,i,j; //local variable
+
+    int len=sizeof(a)/sizeof(a[0]); //length of string 
+
+    for( i=0;i<len;i++) 
+
+    { //loop
+
+        printf("\t%d",a[i]); //printing
+
+    } 
+//iam taking two loop for finding the high values and set that in formate
+    for( i=0;i<len;i++) 
+
+    { 
+
+        for( j=i+1;j<len;j++) 
+
+        { 
+
+            if(a[i]>a[j]) 
+
+            { 
+               //here iam doing interchangeing value
+                int temp=a[i]; assigning value to temp 
+
+                a[i]=a[j]; 
+
+                a[j]=temp; 
+
+            } 
+
+        } 
+
+    } 
+
+    printf("\n"); //new line
+
+    for(i=0;i<len;i++) 
+
+    { 
+       //printing the array in incrementing formate
+        printf("\t%d",a[i]); 
+
+    } 
+
+} 
