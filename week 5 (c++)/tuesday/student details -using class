@@ -1,0 +1,38 @@
+/*
+NAVEEN PALLE
+
+about :
+this is about to print student details using class and function in it
+
+*/
+#include <iostream>
+using namespace std;
+class student{
+    public:
+    char name[20];
+    int roll;
+    public :
+    void display(){
+        cout<<"the name is :"<<name<<endl;
+         cout<<"the roll no is :"<<roll<<endl;
+         }
+        
+    }s;
+int main() {
+   
+    cout<< "enter name"<<endl;
+    cin>>s.name;
+     cout << "enter roll"<<endl;
+    cin>>s.roll;
+    s.display();
+
+    return 0;
+}
+/*
+enter name
+naveen
+enter roll
+36
+the name is :naveen
+the roll no is :36
+*/
