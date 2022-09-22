@@ -1,0 +1,22 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;//decraring
+class naveen//base class
+{
+    public:
+    int age;//variable of base class
+};
+class son : public naveen//child class
+{
+    public:
+    void display(){//function in child class
+        age=6;
+        cout<<"age is :"<<age<<endl;
+    }
+};
+int main() {
+   son s1;//object for child class
+   s1.display();//calling function in child class
+
+    return 0;
+}
