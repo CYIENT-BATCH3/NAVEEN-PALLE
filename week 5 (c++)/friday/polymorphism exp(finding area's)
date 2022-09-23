@@ -3,7 +3,7 @@
  *
  * algorithm:
  * using same function name in a class to print the area of circle and rectangle and triangle
- * in the method of Polymorphism.
+ * in the method of Polymorphism,(FUNCTION OVERLOADING)
  */
 #include <iostream>
 using namespace std;
