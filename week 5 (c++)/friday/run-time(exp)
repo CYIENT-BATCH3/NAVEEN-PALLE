@@ -1,0 +1,36 @@
+
+/*
+using virtual keyword to get the output as allocated memory for function in run time
+*/
+#include <iostream>
+using namespace std;
+
+
+class naveen
+{
+public:
+   virtual void show(){
+    cout<<"hello"<<endl;
+}
+};
+class ishanth : public naveen
+{
+    public:
+    void show(){
+        cout<<"naveen"<<endl;
+    }
+};
+int main() {
+    ishanth s;
+   naveen  &a =s;
+  
+   
+   a.show();
+   
+
+    return 0;
+}
+/*
+output:
+naveen
+*/
